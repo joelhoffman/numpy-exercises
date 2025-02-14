@@ -64,3 +64,18 @@ print(array)
 print([0 * np.nan, np.nan == np.nan,np.inf > np.nan, np.nan - np.nan, np.nan in set([np.nan]),0.3 == 3 * 0.1])
 
 # #18
+array=np.diag([1,2,3,4], k=-1)
+print(array)
+
+# #19
+r1 = np.array([0,1,0,1,0,1,0,1]).reshape((1,8))
+r2 = np.array([1,0,1,0,1,0,1,0]).reshape((1,8))
+array=np.vstack((r1,r2,r1,r2,r1,r2,r1,r2))
+print(array)
+
+# #20
+print(np.unravel_index(100,(6,7,8)))
+
+# #21
+array=np.tile(np.array([0,1,1,0]).reshape(2,2), (4,4))
+print(array)
