@@ -155,7 +155,6 @@ np.sqrt(-1) == np.emath.sqrt(-1)
 6,  ,  , 7, 8
  ,  , 9,10,11
 ```
-
 #### 55. What is the equivalent of enumerate for numpy arrays? (★★☆)
 
 #### 56. Generate a generic 2D Gaussian-like array (★★☆)

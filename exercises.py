@@ -79,7 +79,7 @@ from random import randint;
 # # #21
 # array=np.tile(np.array([0,1,1,0]).reshape(2,2), (4,4))
 # print(array)
-
+#
 # # #22
 # array = np.random.random((5,5)) * 20 + 30
 # array = (array - array.mean()) / array.std();
@@ -108,7 +108,7 @@ from random import randint;
 # print(sum(range(5),-1))
 
 # # ## 27
-Z = np.arange(10)
+#Z = np.arange(10)
 # print(Z)
 # print(Z**Z)
 # print(2 << Z >> 2)
@@ -184,4 +184,3 @@ Z = np.arange(10)
 # # doesn't work for negative:
 # print(array // 1)
 # print(array - array%1)
-
