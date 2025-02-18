@@ -43,7 +43,7 @@ from random import randint;
 # max=array.argmax()
 # print(array[np.unravel_index(min,(10,10))], array[np.unravel_index(max,(10,10))])
 #
-
+# 
 # # #14
 # array=np.fromfunction(np.vectorize(lambda x: randint(0,100)), [30])
 # print(array)
@@ -79,7 +79,7 @@ from random import randint;
 # # #21
 # array=np.tile(np.array([0,1,1,0]).reshape(2,2), (4,4))
 # print(array)
-#
+
 # # #22
 # array = np.random.random((5,5)) * 20 + 30
 # array = (array - array.mean()) / array.std();
@@ -120,8 +120,6 @@ Z = np.arange(10)
 # print((Z<Z)>Z)
 # print(Z<(Z>Z))
 # print((Z==Z)==Z)
-# print(0==True,1==True,2==True)
-# print(0==False,1==False,2==False)
 
 # ## 28
 # print(np.array(0) / np.array(0))
