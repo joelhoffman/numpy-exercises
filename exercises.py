@@ -44,38 +44,88 @@ from random import randint;
 # print(array[np.unravel_index(min,(10,10))], array[np.unravel_index(max,(10,10))])
 #
 
-# #14
-array=np.fromfunction(np.vectorize(lambda x: randint(0,100)), [30])
-print(array)
-print(array.mean())
-print(np.median(array))
+# # #14
+# array=np.fromfunction(np.vectorize(lambda x: randint(0,100)), [30])
+# print(array)
+# print(array.mean())
+# print(np.median(array))
+#
+# # #15
+# array=np.ones((10,10))
+# array[1:9, 1:9] = np.zeros((8,8))
+# print(array)
+#
+# # #16
+# array = np.vstack((np.zeros(10).reshape((1,10)), array, np.zeros(10).reshape((1,10))))
+# array = np.hstack((np.zeros(12).reshape((12,1)), array, np.zeros(12).reshape((12,1))))
+# print(array)
+#
+# # #17
+# print([0 * np.nan, np.nan == np.nan,np.inf > np.nan, np.nan - np.nan, np.nan in set([np.nan]),0.3 == 3 * 0.1])
+#
+# # #18
+# array=np.diag([1,2,3,4], k=-1)
+# print(array)
+#
+# # #19
+# r1 = np.array([0,1,0,1,0,1,0,1]).reshape((1,8))
+# r2 = np.array([1,0,1,0,1,0,1,0]).reshape((1,8))
+# array=np.vstack((r1,r2,r1,r2,r1,r2,r1,r2))
+# print(array)
+#
+# # #20
+# print(np.unravel_index(100,(6,7,8)))
+#
+# # #21
+# array=np.tile(np.array([0,1,1,0]).reshape(2,2), (4,4))
+# print(array)
+#
+# # #22
+# array = np.random.random((5,5)) * 20 + 30
+# array = (array - array.mean()) / array.std();
+# print(array)
+#
+# # #23
+# color_dtype=np.dtype([('red','u8'),('green','u8'),('blue','u8'),('alpha','u8')])
+# print(color_dtype)
+#
+# # #24
+# array1 = np.random.random((5,3))
+# array2 = np.random.random((3,2))
+# print(array1 @ array2)
+#
+# # #25
+# array = np.random.random((10)) * 5 + 5
+# print(array)
+# array[(array > 3) & (array < 8)] *= -1
+# print(array)
 
-# #15
-array=np.ones((10,10))
-array[1:9, 1:9] = np.zeros((8,8))
-print(array)
+# # #26
+#
+# print(sum(range(5)))
+# print(sum(range(5),-1))
+# from numpy import *
+# print(sum(range(5),-1))
 
-# #16
-array = np.vstack((np.zeros(10).reshape((1,10)), array, np.zeros(10).reshape((1,10))))
-array = np.hstack((np.zeros(12).reshape((12,1)), array, np.zeros(12).reshape((12,1))))
-print(array)
+# # ## 27
+Z = np.arange(10)
+# print(Z)
+# print(Z**Z)
+# print(2 << Z >> 2)
+# print(Z <- Z)
+# print(1j*Z)
+# print(Z/1/1)
+# Z = np.arange(3)
+# print(Z)
+# print((Z<Z)>Z)
+# print(Z<(Z>Z))
+# print((Z==Z)==Z)
+print(0==True,1==True,2==True)
+print(0==False,1==False,2==False)
 
-# #17
-print([0 * np.nan, np.nan == np.nan,np.inf > np.nan, np.nan - np.nan, np.nan in set([np.nan]),0.3 == 3 * 0.1])
+# ## 28
+# print(np.array(0) / np.array(0))
+# print(np.array(0) // np.array(0))
+# print(np.array([np.nan]).astype(int))
+# print(np.array([np.nan]).astype(int).astype(float))
 
-# #18
-array=np.diag([1,2,3,4], k=-1)
-print(array)
-
-# #19
-r1 = np.array([0,1,0,1,0,1,0,1]).reshape((1,8))
-r2 = np.array([1,0,1,0,1,0,1,0]).reshape((1,8))
-array=np.vstack((r1,r2,r1,r2,r1,r2,r1,r2))
-print(array)
-
-# #20
-print(np.unravel_index(100,(6,7,8)))
-
-# #21
-array=np.tile(np.array([0,1,1,0]).reshape(2,2), (4,4))
-print(array)
