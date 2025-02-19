@@ -120,12 +120,70 @@ Z = np.arange(10)
 # print((Z<Z)>Z)
 # print(Z<(Z>Z))
 # print((Z==Z)==Z)
-print(0==True,1==True,2==True)
-print(0==False,1==False,2==False)
+# print(0==True,1==True,2==True)
+# print(0==False,1==False,2==False)
 
 # ## 28
 # print(np.array(0) / np.array(0))
 # print(np.array(0) // np.array(0))
 # print(np.array([np.nan]).astype(int))
 # print(np.array([np.nan]).astype(int).astype(float))
+
+# # #29
+# array = np.random.normal(0, 5, 10)
+# print(array)
+# pos = array > 0
+# array[pos] = np.ceil(array[pos])
+# array[~pos] = np.floor(array[~pos])
+# print(array)
+#
+# # # 30
+# array1 = np.random.normal(0, 3, 20).astype(int)
+# array2 = np.random.normal(0, 3, 20).astype(int)
+# print(np.intersect1d(array1,array2))
+
+# # # 31
+# with np.errstate(all='ignore'):
+#     np.arange(3)/0
+#
+
+# # #32
+# with np.errstate(all='ignore'):
+#     print(np.sqrt(-1))
+#     print(np.emath.sqrt(-1))
+#     print(np.sqrt(-1) == np.emath.sqrt(-1))
+
+# # #33
+# print(np.busday_offset("today", [-1,0,1]))
+
+# # #34
+# range = np.arange(np.busday_count("2016-07-01", "2016-08-01", weekmask=[1,1,1,1,1,1,1]));
+# print(range)
+# print(np.busday_offset("2016-07-01", range, weekmask=[1,1,1,1,1,1,1]))
+#
+# Z = np.arange('2016-07', '2016-08', dtype='datetime64[D]')
+# print(Z)
+#
+# # #35
+# A=np.random.random(10)
+# B=np.random.random(10)
+# print((A+B)*(-A/2))
+# np.add(A,B, out=B)
+# np.divide(B,2, out=B)
+# np.multiply(A,-1, out=A)
+# np.multiply(A,B, out=A)
+# print(A)
+#
+
+# # #36
+# array=np.random.normal(0,20, 10)
+# print(array.astype(int))
+# print(np.trunc(array))
+# print(np.where(array>0,np.floor(array),np.ceil(array)))
+# (fpart, ipart) = np.modf(array)
+# print(ipart)
+# print(array-fpart)
+# # doesn't work for negative:
+# print(array // 1)
+# print(array - array%1)
 
