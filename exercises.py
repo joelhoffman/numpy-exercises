@@ -184,3 +184,8 @@ from random import randint;
 # # doesn't work for negative:
 # print(array // 1)
 # print(array - array%1)
+
+# #37
+array = np.arange(5)
+array = np.vstack([array,array,array,array,array])
+print(array)
